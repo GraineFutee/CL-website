@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device.width, initial-scale=1">
+    <title>CocktailLife</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/bulmaCss/bulma.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- css -->
+
+    <!-- font -->
+    <!-- <link rel="stylesheet" href="/fontawesomeCss/all.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <!-- font -->
+  </head>
+
+  <body>
+    <div class="header-block">
+      <header class="header">
+        <a href="/" class="header-logo"> CocktailLife </a>
+          <nav class="header-menu">
+            <a href="#"> Tips </a>
+            <a href="/recipes"> Recipes </a>
+            <a href="#"> About </a>
+          </nav>
+      </header>
+    </div>
+    {% block content %}{% endblock %}
+  </body>
+</html>

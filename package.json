@@ -4,7 +4,7 @@
   "description": "Cocktail recipes website",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon app.js"
   },
   "keywords": [
     "Cocktails",

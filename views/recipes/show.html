@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="hero is-fullheight welcome-image">
+    <div class="container show-text">
+      <div class="scrollmenu">
+          {% for r in recipes %}
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front {{r.name}}" style="background-image: url('/img/{{r.picture}}');
+              background-color: #cccccc;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;">
+              <h1 class="subtitle">{{r.name}}</h1>
+              </div>
+              <div class="flip-card-back">
+                <p>{{r.history}}</p>
+                <span class="right">Difficulty : {{r.difficulty}}</span>
+                <span class="left">Grade : {{r.grade}}</span>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
