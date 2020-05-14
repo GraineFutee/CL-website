@@ -2,24 +2,40 @@
 
 {% block content %}
   <div class="hero is-fullheight welcome-image">
+    <h1 class="title show-title">Recipes</h1>
     <div class="container show-text">
       <div class="scrollmenu">
           {% for r in recipes %}
           <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front {{r.name}}" style="background-image: url('/img/{{r.picture}}');
-              background-color: #cccccc;
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;">
-              <h1 class="subtitle">{{r.name}}</h1>
+            <a href="/recipes/{{r._id}}">
+              <div class="flip-card-inner">
+                <div class="flip-card-front {{r.name}}" style="background-image: url('/img/{{r.picture}}');
+                background-color: #cccccc;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;">
+                <h1 class="subtitle">{{r.name}}</h1>
+                <div class="right">
+                  <span class="fa fa-star {% if r.grade>0 %} checked {% endif %}"></span>
+                  <span class="fa fa-star {% if r.grade>1 %} checked {% endif %}"></span>
+                  <span class="fa fa-star {% if r.grade>2 %} checked {% endif %}"></span>
+                  <span class="fa fa-star {% if r.grade>3 %} checked {% endif %}"></span>
+                  <span class="fa fa-star {% if r.grade>4 %} checked {% endif %}"></span>
+                </div>
+                </div>
+                <div class="flip-card-back">
+                  <p>{{r.history}}</p>
+                  <span class="right">Difficulty : {{r.difficulty}}</span>
+                  <div class="left">
+                    <span class="fa fa-star {% if r.grade>0 %} checked {% endif %}"></span>
+                    <span class="fa fa-star {% if r.grade>1 %} checked {% endif %}"></span>
+                    <span class="fa fa-star {% if r.grade>2 %} checked {% endif %}"></span>
+                    <span class="fa fa-star {% if r.grade>3 %} checked {% endif %}"></span>
+                    <span class="fa fa-star {% if r.grade>4 %} checked {% endif %}"></span>
+                  </div>
+                </div>
               </div>
-              <div class="flip-card-back">
-                <p>{{r.history}}</p>
-                <span class="right">Difficulty : {{r.difficulty}}</span>
-                <span class="left">Grade : {{r.grade}}</span>
-              </div>
-            </div>
+            </a>
           </div>
           {% endfor %}
       </div>
