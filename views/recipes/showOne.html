@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="hero is-fullheight welcome-image">
+    <!-- <h1 class="title show-title"><i class="far fa-arrow-alt-circle-left"></i>&nbsp Back</h1> -->
+    <div class="container showOne-text">
+      <div class="columns is-gapless">
+        <div class="column column-image" style="background-image: url('/img/{{recipe.picture}}');
+        background-color: #cccccc;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;">
+          <a href="/recipes"><i class="far fa-arrow-alt-circle-left"></i></a>
+          <h1 class="subtitle">{{recipe.name}}</h1>
+          <div class="star-showOne">
+            <span class="fa fa-star {% if recipe.grade>0 %} checked {% endif %}"></span>
+            <span class="fa fa-star {% if recipe.grade>1 %} checked {% endif %}"></span>
+            <span class="fa fa-star {% if recipe.grade>2 %} checked {% endif %}"></span>
+            <span class="fa fa-star {% if recipe.grade>3 %} checked {% endif %}"></span>
+            <span class="fa fa-star {% if recipe.grade>4 %} checked {% endif %}"></span>
+          </div>
+        </div>
+        <div class="column is-three-fifths">
+          <div class="columns columns-content">
+            <div class="column is-half">
+              <h1 class="subtitle">History</h1>
+              <p>{{recipe.history}}</p>
+            </div>
+            <div class="column">
+              <h1 class="subtitle">Ingredients</h1>
+              <ul>
+              {% for i in recipe.ingredients %}
+                <li>{{i | safe}}</li>
+              {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <div class="columns columns-content">
+            <div class="column">
+              <h1 class="subtitle">Charac.</h1>
+              <ul>
+              {% for c in recipe.characteristics %}
+                <li>&nbsp-&nbsp{{c}}</li>
+              {% endfor %}
+              </ul>
+            </div>
+            <div class="column">
+              <h1 class="subtitle">Equipment</h1>
+              <ul>
+              {% for e in recipe.equipment %}
+                <li>&nbsp-&nbsp{{e}}</li>
+              {% endfor %}
+              </ul>
+            </div>
+            <div class="column is-two-fifths">
+              <h1 class="subtitle">Preparation</h1>
+              <p>{{recipe.preparation}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

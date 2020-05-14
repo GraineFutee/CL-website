@@ -20,4 +20,13 @@ router.get('/recipes', async (req, res) => {
   }
 })
 
+// Getting one
+
+router.get('/recipes/:id', (req, res) => {
+  Recipe.findById(req.params.id).then(recipe => {
+    res.render('recipes/showOne.html', {recipe: recipe});
+  },
+  err => res.status(500).send(err));
+});
+
 module.exports = router
