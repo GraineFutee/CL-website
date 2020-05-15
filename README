@@ -1,0 +1,11 @@
+CocktailLife Website
+
+Hey,
+
+Here are the command lines necessary to make it work!
+
+	npm install --save express mongoose nunjucks bulma
+	npm i --save-dev dotenv nodemon
+
+Then to launch app :
+	npm run devStart
