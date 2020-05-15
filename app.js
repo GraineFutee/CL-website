@@ -8,7 +8,7 @@ const nunjucks = require('nunjucks')
 app.use('/bulmaCss', express.static(__dirname + '/node_modules/bulma/css'))
 app.use('/css', express.static(__dirname + '/src/css'))
 app.use('/img', express.static(__dirname + '/src/img'))
-
+app.use('/js', express.static(__dirname + '/src/js'))
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
 const db = mongoose.connection
 db.on('error', (error) => console.error(error))

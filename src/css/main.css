@@ -84,13 +84,23 @@ body {
 /* Show */
 
 .show-title {
-  color: #ffffff;
-  border: 3px solid #ffffff;
-  padding:7px;
   position: absolute;
   left: 20%;
   top: 15%;
   margin-bottom: 15px;
+  display: inherit;
+}
+
+.show-title .title {
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  padding:7px;
+}
+
+.show-title a {
+  color: #ffffff;
+  font-size: large;
+  margin: 15px;
 }
 
 div.scrollmenu {

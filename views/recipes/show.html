@@ -2,7 +2,29 @@
 
 {% block content %}
   <div class="hero is-fullheight welcome-image">
-    <h1 class="title show-title">Recipes</h1>
+    <div class="show-title">
+      <a id="openModal">
+        <i class="fas fa-search"></i>
+      </a>
+      <h1 class="title">Recipes</h1>
+      <!-- Modal -->
+    </div>
+    <div class="modal" id="searchModal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="field has-addons">
+          <div class="control">
+            <input class="input" type="text" placeholder="What to search ...">
+          </div>
+          <div class="control">
+            <a class="button is-info">
+              Search
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Modal -->
     <div class="container show-text">
       <div class="scrollmenu">
           {% for r in recipes %}
@@ -41,4 +63,5 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript" src="/js/modal.js"></script>
 {% endblock %}
