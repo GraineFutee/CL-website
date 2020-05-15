@@ -12,16 +12,18 @@
     <div class="modal" id="searchModal">
       <div class="modal-background"></div>
       <div class="modal-content">
-        <div class="field has-addons">
-          <div class="control">
-            <input class="input" type="text" placeholder="What to search ...">
+        <form class="form" action="/recipes" method="get">
+          <div class="field has-addons">
+            <div class="control">
+              <input name="searchData" id="searchData" class="input" type="text" placeholder="What to search ...">
+            </div>
+            <div class="control">
+              <a>
+                <button type="submit" class="button is-info">Search</button>
+              </a>
+            </div>
           </div>
-          <div class="control">
-            <a class="button is-info">
-              Search
-            </a>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
       <!-- Modal -->
