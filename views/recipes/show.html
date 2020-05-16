@@ -7,6 +7,7 @@
         <i class="fas fa-search"></i>
       </a>
       <h1 class="title">Recipes</h1>
+      {% if search %}containing {{search}}{% endif %}
       <!-- Modal -->
     </div>
     <div class="modal" id="searchModal">
