@@ -7,5 +7,12 @@ Here are the command lines necessary to make it work!
 	npm install --save express mongoose nunjucks bulma
 	npm i --save-dev dotenv nodemon
 
+Also need to creat a .env file containing : DATABASE_URL=mongodb://localhost/CLdb
+
+here are some information about the databse :
+	name : CLdb
+	table : [recipes]
+You will find some data in the data.json file to populate the table.
+
 Then to launch app :
 	npm run devStart

@@ -1,0 +1,23 @@
+[{
+  "name": "Negroni", "characteristics": ["Bitter", "Old fashion"], "ingredients": ["<i class='fas fa-wine-bottle'></i> &nbsp 4,5cl - Gin", "<i class='fas fa-wine-bottle'></i> &nbsp 4,5cl - Vermouth doux", "<i class='fas fa-wine-bottle'></i> &nbsp 4,5cl - Campari", "<i class='fas fa-lemon'></i> &nbsp 1 - Orange slice"], "equipment": ["Cocktail spoon"], "history": "According to the legend surrounding the origins of negroni, Count Camillo Negroni, a Florentine, once asked his bartender to replace soda water with gin in his Americano. dosed equally, the ingredients produce a simple but effective masterpiece", "preparation": "Pour all the ingredients, except the orange, into a low wiskey glass. Mix and garnish with an orange slice", "difficulty": 1, "grade": 5, "picture": "negroni.jpg"
+},
+{
+  "name": "Bellini", "characteristics": ["Bubles", "Flutes"], "ingredients": ["<i class='fas fa-blender'></i> &nbsp 3cl - Peach puree", "<i class='fas fa-wine-bottle'></i> &nbsp 6cl - Sparkling wine"], "equipment": ["Cocktail spoon"], "history": "It was in Venice in the 1940s that this simple mixture of white peach puree and sparkling wine was invented. The barman Giuseppe Cipriani, having noticed that this cocktail had the hue of a work by Giovanni Bellini, gave him the name of this painter of the Italian Renaissance", "preparation": "Pour the puree, then the sparkling wine in a flute, Turn quickly and delicately with a cocktail spoon and serve", "difficulty": 1, "grade": 4, "picture": "bellini.jpg"
+},
+{
+  "name": "Boulevardier", "characteristics": ["Vermouths", "Martini"], "ingredients": ["<i class='fas fa-wine-bottle'></i> &nbsp 4,5cl - Bourbon", "<i class='fas fa-wine-bottle'></i> &nbsp 4,5cl - Vermouth doux", "<i class='fas fa-wine-bottle'></i> &nbsp 4,5cl - Campari"], "equipment": ["Cocktail spoon"], "history": "Another variant of the negroni imagined by McElhone, and closer to the original, the boulvardier figüre in his Barflies and Cocktails published in 1927. However, given that prohibition prevailed in the United States, it is difficult to say whether McElhone could really be get bourbon or if he only dreamed of it.", "preparation": "Pour everything into a mixing glass filled with ice and turn 20 to 30 seconds to cool well. Filter and pour into a chilled glass", "difficulty": 1, "grade": 3, "picture": "boulevardier.jpg"
+},
+{
+  "name": "Golden Fleece", "characteristics": ["Eau-de-vie", "Latte glass"], "ingredients": ["<i class='fas fa-wine-bottle'></i> &nbsp 5,25cl - Cachaça", "<i class='fas fa-blender'></i> &nbsp 2,25cl - Concentred milk(sugary)", "<i class='fas fa-wine-bottle'></i> &nbsp 0,75cl - Ancho reyes", "<i class='fas fa-wine-bottle'></i> &nbsp 1drop - Chocolat bitter", "<i class='fas fa-lemon'></i> &nbsp 1 - Cinamon stick"], "equipment": ["Shaker"], "history": "Here is a golden fleece as shimmering as the wool of the mythical winged ram. This spicy cocktail is beefy like a sabotage in the face. Gather your argonauts and go in search of this wonder.", "preparation": "Pour all the ingredients, except the cinnamon, into a shaker. Add the ice, shake hard for 8 to 10 seconds and filter through a glass or a shaken wine glass. Grate a little cinnamon.", "difficulty": 3, "grade": 3, "picture": "goldenFleece.jpg"
+},
+{
+  "name": "Mojito",
+  "characteristics": ["Fresh", "Eyeball"],
+  "ingredients": ["4,5cl - Bourbon", "2,25cl - Lemon juice", "1,5cl - Marasquin", "0,75cl - Violet cream", "1 - Lime slice", "Ice"],
+  "equipment": ["Shaker"],
+  "history": "blabla",
+  "preparation": "blabla",
+  "difficulty": 3,
+  "grade": 1,
+  "picture": "mojito.jpg"
+}]
