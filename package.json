@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "bulma": "^0.8.2",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mongoose": "^5.9.13",
     "nunjucks": "^3.2.1"
   },
